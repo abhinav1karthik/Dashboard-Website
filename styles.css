@@ -143,6 +143,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  background-color: white;
 }
 
 .main-content {
@@ -169,4 +170,42 @@ i {
   font-size: x-large;
   font-weight: bold;
   font-family: sans-serif;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: 1fr 30fr;
+}
+
+.myProjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projTitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.myProjects > * {
+  margin: 20px;
+  border: 2px solid gray;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid orange;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projIcons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.projContent {
+  margin-bottom: 20px;
 }
